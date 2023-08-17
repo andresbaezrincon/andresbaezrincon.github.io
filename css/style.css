@@ -120,7 +120,6 @@ h2{
     color: #a5bbda;
     transition-property: color,width,background-color;
     transition-duration: .5s;
-    
 }
 #habilidadesBlandas{
     width:70%;
@@ -150,6 +149,7 @@ h2{
 h3{
     margin: 0 auto;
 }
+
 
 /*Seccion Certificaciones*/
 #certificaciones{
