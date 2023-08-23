@@ -34,7 +34,7 @@ header{
     z-index: 2;
 }
 #logoPagina{
-    filter: invert(100%) sepia(85%) saturate(13%) hue-rotate(183deg) brightness(103%) contrast(103%);
+    /*filter: invert(100%) sepia(85%) saturate(13%) hue-rotate(183deg) brightness(103%) contrast(103%);*/
     width:8%;
     margin-left: 5%;
     margin-top: 1%;
@@ -150,7 +150,21 @@ h3{
     margin: 0 auto;
 }
 
-
+/*Seccion Proyectos*/
+#proyectos{
+    background-color: #ffffff;
+}
+.proyecto{
+    margin: 5% auto;
+    min-height: 10vh;
+    display:flex;
+    padding: 10px 55px;
+    box-shadow: 0 0 3px #000000;
+    border-radius: 10px;
+    text-align:center;
+    width:50%;
+    flex-direction:column;
+}
 /*Seccion Certificaciones*/
 #certificaciones{
     background-color: #c2c6ce;
