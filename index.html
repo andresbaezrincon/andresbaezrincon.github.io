@@ -3,15 +3,17 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" href="images/icono.png"></link>
 	<title>Portfolio Web - Andres Baez Rincon</title>
 </head>
 <body id="home">
-	<script type="text/JavaScript" src="js/script.js"></script>
 	<header>
-		<img src="images/icono.png" alt="logo" id="logoPagina">
-		</a>
-		<nav class="menu">
+		<!-- <img src="images/icono.png" alt="logo" id="logoPagina"> -->
+		<!-- </a> -->
+		<div class="navbar">
+			<div class="logo"><a href="#"><img src="images/icono.png" alt="logo" id="logoPagina"></a></div>
 			<ul class="links">
 					<li><a href="#sobreMi" id="menuSobreMi">About Me</a></li>
 					<!--<li><a href="#proyectos">Proyectos</a></li>-->
@@ -19,8 +21,33 @@
 					<li><a href="cvAndresBaez.pdf" target="_blank">CV</a></li>
 					<li><a href="#contacto" style="margin-right: 30px;">Contact</a></li>
 			</ul>
-		</nav>
+			<div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+		<div class="dropdown-menu">
+			<li><a href="#sobreMi" id="menuSobreMi">About Me</a></li>
+			<!--<li><a href="#proyectos">Proyectos</a></li>-->
+			<li><a href="#certificaciones">Certifications</a></li>
+			<li><a href="cvAndresBaez.pdf" target="_blank">CV</a></li>
+			<li><a href="#contacto" style="margin-right: 30px;">Contact</a></li>
+		</div>
 	</header>
+	<script>
+		const toggleBtn = document.querySelector('.toggle_btn')
+		const toggleBtnIcon = document.querySelector('.toggle_btn i')
+		const dropDownMenu = document.querySelector('.dropdown-menu')
+
+		toggleBtn.onclick = function(){
+			dropDownMenu.classList.toggle('open')
+			const isOpen = dropDownMenu.classList.contains('open')
+
+			toggleBtnIcon.classList = isOpen
+			? 'fa-solid fa-xmark'
+			: 'fa-solid fa-bars'
+		}
+
+	</script>
 	<main>
 
 		<section class="item" id="sobreMi">
