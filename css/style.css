@@ -7,8 +7,11 @@ body{
     background-size: cover;
     background-attachment: fixed;
     z-index: 1;
+    position: absolute;
 }
-
+*{
+    box-sizing:border-box;
+}
 header{
     background-color: #0f1c30;
     width:100%;
@@ -50,6 +53,9 @@ a{
     display:flex;
     gap: 2rem;
 }
+li{
+    list-style-type: none;
+}
 .navbar ul li a, .dropdown-menu, .dropdown-menu a{
     text-decoration: none;
     color:#ffffff;
@@ -67,7 +73,9 @@ a{
 
 .item{
     padding-top: 80px;
+    padding-right: 0;
     opacity: 95%;
+    width: 100%;
 }
 .navbar .toggle_btn{
     color:#ffffff;
@@ -123,21 +131,24 @@ h2{
     color:black;
 }
 /*Seccion Sobre mi*/
+#sobreMi{
+    background-color: #c0d0ef;
+    display: flex;
+    flex-direction: column;
+    padding-top:2%;
+    padding-bottom:2%;
+    
+}
 #fotoPerfil{
     border-radius: 50%;
     border: #000000 1px solid;
-    width: 15%;
-    display: inline-block;
-    margin: 25px;
+    width: 300px;
+    display:inline-block;
     margin-left:5%;
     z-index: 1.5;
+    align-self: center;
 }
-#sobreMi{
-    background-color: #c0d0ef;
-    display: inline-block;
-    padding-top:2%;
-    padding-bottom:2%;
-}
+
 .linea{
     background-color: #0f1c30;
     height: 5px;
@@ -145,8 +156,9 @@ h2{
     margin-left: 5%;
 }
 #resumen{
-    width: 70%;
-    margin-right: 20px;
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 20px;
     float:right;
     display: flex;
     flex-direction: column;
@@ -158,6 +170,7 @@ h2{
     border-radius: 10px;
     cursor: pointer;
     width:400px;
+
 }
 #misHabilidades:hover{
     background-color: #0f1c30;
@@ -268,7 +281,7 @@ h3{
     box-shadow: 0 0 3px #000000;
     border-radius: 10px;
     text-align:center;
-    width:50%;
+    width:800px;
     flex-direction:column;
     /*position: relative;*/
 }
@@ -280,13 +293,16 @@ h3{
     box-shadow: 0 0 20px rgba(1,1,1,0.2);
     border-radius: 10px;
     text-align:center;
-    width:42%;
+    width:340px;
     flex-direction:column;
     height: 200px;
     /*position: relative;*/
 }
 #coursera{
     background-color: #4868c0
+}
+#python5{
+    height:220px;
 }
 #coursera:hover{
     background-color: #273a6c;
@@ -410,7 +426,15 @@ footer{
         margin-top: 1%;
         margin-bottom: 1%; 
     }
-
+    body{
+        position: absolute;
+    }
+    #fotoPerfil{
+        width: 300px;
+    }
+    *{
+        box-sizing:border-box;
+    }
     .navbar .links{
         display:none;
     }
@@ -432,10 +456,24 @@ footer{
     input{
         padding: 15px;
     }
+    .certificacion{
+        width:500px;
+    }
+    .subCertificacion{
+        width:400px;
+    }
+
 }
 @media(max-width: 576px){
     .dropdown-menu{
         left: 0rem;
+        right: 0rem;
         width: unset;
+    }
+    body{
+        position:absolute;
+    }
+    *{
+        box-sizing:border-box;
     }
 }
