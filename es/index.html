@@ -3,34 +3,48 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.css">
-	<title>Portafolio Web - Andres Bae Rinconz</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="../css/style.css">
+	<link rel="icon" href="../images/icono.png"></link>
+	<title>Portafolio Web - Andres Baez Rincon</title>
 </head>
 <body id="home">
-	<script type="text/JavaScript" src="js/script.js"></script>
 	<header>
-		<img src="images/icono.png" alt="logo" id="logoPagina">
-		</a>
-		<nav class="menu">
+		<div class="navbar">
+			<div class="logo"><a href="#"><img src="../images/icono.png" alt="logo" id="logoPagina"></a></div>
 			<ul class="links">
 					<li><a href="#sobreMi" id="menuSobreMi">Sobre mí</a></li>
-					<li><a href="#proyectos">Proyectos</a></li>
+					<!--<li><a href="#proyectos">Proyectos</a></li>-->
 					<li><a href="#certificaciones">Certificaciones</a></li>
-					<li><a href="cv.pdf" target="_blank">CV</a></li>
+					<li><a href="../cvAndresBaez.pdf" target="_blank">CV</a></li>
 					<li><a href="#contacto" style="margin-right: 30px;">Contacto</a></li>
+					<li><span class="en">EN</span>
+						<input type="checkbox" class="check" checked="true">
+						<span class="es">ES</span></li>
 			</ul>
-		</nav>
+			<div class="toggle_btn">
+				<i class="fa-solid fa-bars"></i>
+			</div>
+		</div>
+		<div class="dropdown-menu">
+			<li><a href="#sobreMi" id="menuSobreMi">Sobre mí</a></li>
+			<!--<li><a href="#proyectos">Proyectos</a></li>-->
+			<li><a href="#certificaciones">Certificaciones</a></li>
+			<li><a href="cvAndresBaez.pdf" target="_blank">CV</a></li>
+			<li><a href="#contacto" style="margin-right: 30px;">Contacto</a></li>
+			<li><span class="en">EN</span>
+				<input type="checkbox" class="check2" checked = "true">
+				<span class="es">ES</span></li>
+		</div>
 	</header>
 	<main>
-
 		<section class="item" id="sobreMi">
 			<h2>Sobre Mi</h2>
 			<hr class="linea"/>
-			<img src="images/foto.png" alt="Avatar" id="fotoPerfil">
+			<img src="../images/foto.png" alt="Avatar" id="fotoPerfil">
 			<section id="resumen">
 				<p class="res">
-					¡Hola!, mi nombre Andrés Báez y soy ingeniero en Mecatrónica de la Universidad Militar Nueva Granada, en Bogotá D.C, Colombia.
-				</p>
+					¡Hola!, mi nombre Andrés Báez y soy ingeniero en Mecatrónica de la Universidad Militar Nueva Granada, en Bogotá D.C, Colombia.</p>
 				<p class="res">
 					Tengo un amplio interés por las ciencias de la computación y la automatización industrial. En mi formación como profesional me he visto proyectado en estas áreas de la ingeniería Mecatrónica y he evidenciado un gran potencial para aportar en diversos proyectos relacionados con estas áreas.
 				</p>
@@ -38,7 +52,7 @@
 					<summary id="misHabilidades">Mis habilidades</summary>
 					<div id="habilidadesBlandas">
 						<h3>Habilidades Blandas</h3>
-						<ul>
+						<ul class="listaHabilidades">
 							<li>Creatividad</li>
 							<li>Trabajo en Equipo</li>
 							<li>Colaboración</li>
@@ -49,16 +63,16 @@
 					</div>
 					<div id="habilidadesDuras">
 						<h3>Habilidades Duras</h3>
-						<ul>
+						<ul class="listaHabilidades">
 							<li>Programación en diferentes lenguajes:<ul>
-								<li style="list-style-image: url(images/pythonLogo.png);">Python</li>
-								<li style="list-style-image: url(images/logoHtml.png);">HTML5</li>
-								<li style="list-style-image: url(images/cssLogo.png);">CSS</li>
-								<li style="list-style-image: url(images/jslogo.png);">JavaScript</li>
-								<li style="list-style-image: url(images/matlabLogo.png);">Matlab</li>
-								<li style="list-style-image: url(images/javaLogo.png);">Java</li>
-								<li style="list-style-image: url(images/cppLogo.png);">C++</li>
-								<li style="list-style-image: url(images/cAstLogo.png);">C#</li>
+								<li style="list-style-image: url(../images/pythonLogo.png);">Python</li>
+								<li style="list-style-image: url(../images/logoHtml.png);">HTML5</li>
+								<li style="list-style-image: url(../images/cssLogo.png);">CSS</li>
+								<li style="list-style-image: url(../images/jslogo.png);">JavaScript</li>
+								<li style="list-style-image: url(../images/matlabLogo.png);">Matlab</li>
+								<li style="list-style-image: url(../images/javaLogo.png);">Java</li>
+								<li style="list-style-image: url(../images/cppLogo.png);">C++</li>
+								<li style="list-style-image: url(../images/cAstLogo.png);">C#</li>
 							</ul></li>
 							<li>Electrónica implementada en:
 								<ul>
@@ -85,14 +99,6 @@
 						</ul>
 					</div>
 				</details>
-			</section>
-		</section>
-		<section class="item" id="proyectos">
-			<h2>Proyectos</h2>
-			<hr class="linea"/>
-			<section class="proyecto">
-				<p class="tituloProyecto">Milirocket VTE</p>
-				<p class="descripcionProyecto">Diseño y construcción de un vehículo de tracción eléctrica, realizado por un grupo de estudiantes de la UMNG</p>
 			</section>
 		</section>
 		<section class="item" id="certificaciones">
@@ -231,11 +237,11 @@
 				</div>
 			</form>
 			<div class="redes">
-				<a href="https://www.linkedin.com/in/andres-j-baez-rincon-2560ab1b3/" target="_blank"><img alt="linkedin" class="logosRedes"src="images/linkedinLogo.png"></a>
-				<a href="https://facebook.com/andresbaez0710/" target="_blank"><img src="images/facebookLogo.png" alt="facebook" class="logosRedes"></a>
-				<a href="https://www.instagram.com/abaez_/" target="_blank"><img src="images/instagramLogo.png" alt="instagram" class="logosRedes"></a>
-				<a href="https://github.com/andresbaezrincon" target="_blank"><img src="images/githubLogo.png" alt="github" class="logosRedes"></a>
-				<a href="https://twitter.com/baez0710" target="_blank"><img src="images/twitterLogo.png" alt="twitter" class="logosRedes"></a>
+				<a href="https://www.linkedin.com/in/andres-j-baez-rincon-2560ab1b3/" target="_blank"><img alt="linkedin" class="logosRedes"src="../images/linkedinLogo.png"></a>
+				<a href="https://facebook.com/andresbaez0710/" target="_blank"><img src="../images/facebookLogo.png" alt="facebook" class="logosRedes"></a>
+				<a href="https://www.instagram.com/abaez_/" target="_blank"><img src="../images/instagramLogo.png" alt="instagram" class="logosRedes"></a>
+				<a href="https://github.com/andresbaezrincon" target="_blank"><img src="../images/githubLogo.png" alt="github" class="logosRedes"></a>
+				<a href="https://twitter.com/baez0710" target="_blank"><img src="../images/twitterLogo.png" alt="twitter" class="logosRedes"></a>
 			</div>
 			
 		</section>
@@ -250,5 +256,6 @@
 			Derechos Reservados&copy
 		</p>
 	</footer>
+	<script type="text/JavaScript" src="../js/script.js"></script>
 </body>
 </html>

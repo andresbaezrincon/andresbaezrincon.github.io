@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,6 @@
 </head>
 <body id="home">
 	<header>
-		<!-- <img src="images/icono.png" alt="logo" id="logoPagina"> -->
-		<!-- </a> -->
 		<div class="navbar">
 			<div class="logo"><a href="#"><img src="images/icono.png" alt="logo" id="logoPagina"></a></div>
 			<ul class="links">
@@ -20,6 +18,9 @@
 					<li><a href="#certificaciones">Certifications</a></li>
 					<li><a href="cvAndresBaez.pdf" target="_blank">CV</a></li>
 					<li><a href="#contacto" style="margin-right: 30px;">Contact</a></li>
+					<li><span class="en">EN</span>
+						<input type="checkbox" class="check">
+						<span class="es">ES</span></li>
 			</ul>
 			<div class="toggle_btn">
 				<i class="fa-solid fa-bars"></i>
@@ -31,25 +32,12 @@
 			<li><a href="#certificaciones">Certifications</a></li>
 			<li><a href="cvAndresBaez.pdf" target="_blank">CV</a></li>
 			<li><a href="#contacto" style="margin-right: 30px;">Contact</a></li>
+			<li><span class="en">En</span>
+				<input type="checkbox" class="check2">
+				<span class="es">ES</span></li>
 		</div>
 	</header>
-	<script>
-		const toggleBtn = document.querySelector('.toggle_btn')
-		const toggleBtnIcon = document.querySelector('.toggle_btn i')
-		const dropDownMenu = document.querySelector('.dropdown-menu')
-
-		toggleBtn.onclick = function(){
-			dropDownMenu.classList.toggle('open')
-			const isOpen = dropDownMenu.classList.contains('open')
-
-			toggleBtnIcon.classList = isOpen
-			? 'fa-solid fa-xmark'
-			: 'fa-solid fa-bars'
-		}
-
-	</script>
 	<main>
-
 		<section class="item" id="sobreMi">
 			<h2>About Me</h2>
 			<hr class="linea"/>
@@ -64,7 +52,7 @@
 					<summary id="misHabilidades">My Skills</summary>
 					<div id="habilidadesBlandas">
 						<h3>Soft Skills</h3>
-						<ul>
+						<ul class="listaHabilidades">
 							<li>Creativity</li>
 							<li>Team Work</li>
 							<li>Collaboration</li>
@@ -75,7 +63,7 @@
 					</div>
 					<div id="habilidadesDuras">
 						<h3>Hard Skills</h3>
-						<ul>
+						<ul class="listaHabilidades">
 							<li>Programming in different languages:<ul>
 								<li style="list-style-image: url(images/pythonLogo.png);">Python</li>
 								<li style="list-style-image: url(images/logoHtml.png);">HTML5</li>
@@ -278,5 +266,6 @@
 			All rights reserved&copy
 		</p>
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>
