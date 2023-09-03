@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="images/icono.png"></link>
+	<link rel="icon" href="images/icono.png">
 	<title>Portfolio Web - Andres Baez Rincon</title>
 </head>
 <body id="home">
@@ -27,6 +27,7 @@
 			</div>
 		</div>
 		<div class="dropdown-menu">
+			<ul>
 			<li><a href="#sobreMi" id="menuSobreMi">About Me</a></li>
 			<!--<li><a href="#proyectos">Proyectos</a></li>-->
 			<li><a href="#certificaciones">Certifications</a></li>
@@ -35,6 +36,7 @@
 			<li><span class="en">EN</span>
 				<input type="checkbox" class="check2">
 				<span class="es">ES</span></li>
+			</ul>
 		</div>
 	</header>
 	<main>
@@ -114,14 +116,14 @@
 		<section class="item" id="certificaciones">
 			<h2>Certifications</h2>
 			<hr class="linea"/>
-			<section class="certificacion" id="coursera">
+			<section class="certificacion" id="coursera1">
 				<p class="tituloCertificacion">Python for Everydoby</p>
 				<p class="datosCertificacion">Institution: Coursera</p>
 				<p class="datosCertificacion">Date of Issuance: July 2023</p>
 				<p class="datosCertificacion">Credential ID: R9N2MEJL7QS3</p>
 				<a href="https://www.coursera.org/account/accomplishments/specialization/certificate/R9N2MEJL7QS3" target="_blank" class="verCertificado">View Certificate</a>
 				<details>
-					<summary id="verSubCursos">View Courses</summary>
+					<summary class="verSubCursos">View Courses</summary>
 					<div class="subCertificacion" id="python1">
 						<p class="titulosubCertificacion">Getting Started with Python</p>
 						<p class="datossubCertificacion">Institution: Coursera</p>
@@ -165,14 +167,14 @@
 				</details>
 			</section>
 
-			<div class="certificacion" id="coursera">
+			<div class="certificacion" id="coursera2">
 				<p class="tituloCertificacion">Web Design for Everybody: Basics of Web Development & Coding</p>
 				<p class="datosCertificacion">Institution: Coursera</p>
 				<p class="datosCertificacion">Date of Issuance: In Progress</p>
 				<p class="datosCertificacion">Credential ID: --</p>
 				<a href="" target="_blank" class="verCertificado">Certificate in progress</a>
 				<details>
-					<summary id="verSubCursos">View Courses</summary>
+					<summary class="verSubCursos">View Courses</summary>
 					<div class="subCertificacion" id="html1">
 						<p class="titulosubCertificacion">Introduction to HTML5</p>
 						<p class="datossubCertificacion">Institution: Coursera</p>
@@ -232,7 +234,7 @@
 					<input type="text" name="Nombre" id="name" placeholder="Name">
 
 					<label for="phone">Phone Number</label>
-					<input type="phone" name="Telefono" id="phone" placeholder="Phone">
+					<input type="number" name="Telefono" id="phone" placeholder="Phone">
 
 					<label for="email">Email</label>
 					<input type="email" name="Correo" id="email" placeholder="email@email.com">
@@ -247,7 +249,7 @@
 				</div>
 			</form>
 			<div class="redes">
-				<a href="https://www.linkedin.com/in/abaezr/" target="_blank"><img alt="linkedin" class="logosRedes"src="images/linkedinLogo.png"></a>
+				<a href="https://www.linkedin.com/in/abaezr/" target="_blank"><img alt="linkedin" class="logosRedes" src="images/linkedinLogo.png"></a>
 				<a href="https://facebook.com/andresbaez0710/" target="_blank"><img src="images/facebookLogo.png" alt="facebook" class="logosRedes"></a>
 				<a href="https://www.instagram.com/abaez_/" target="_blank"><img src="images/instagramLogo.png" alt="instagram" class="logosRedes"></a>
 				<a href="https://github.com/andresbaezrincon" target="_blank"><img src="images/githubLogo.png" alt="github" class="logosRedes"></a>
@@ -263,7 +265,7 @@
 			Web Page Designed by: Andres Baez.
 		</p>
 		<p>
-			All rights reserved&copy
+			All rights reserved&copy;
 		</p>
 	</footer>
 	<script src="js/script.js"></script>

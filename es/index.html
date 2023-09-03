@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="../css/style.css">
-	<link rel="icon" href="../images/icono.png"></link>
+	<link rel="icon" href="../images/icono.png">
 	<title>Portafolio Web - Andres Baez Rincon</title>
 </head>
 <body id="home">
@@ -26,15 +26,15 @@
 				<i class="fa-solid fa-bars"></i>
 			</div>
 		</div>
-		<div class="dropdown-menu">
-			<li><a href="#sobreMi" id="menuSobreMi">Sobre mí</a></li>
+		<div class="dropdown-menu"><ul>
+			<li><a href="#sobreMi">Sobre mí</a></li>
 			<!--<li><a href="#proyectos">Proyectos</a></li>-->
 			<li><a href="#certificaciones">Certificaciones</a></li>
 			<li><a href="cvAndresBaez.pdf" target="_blank">CV</a></li>
 			<li><a href="#contacto" style="margin-right: 30px;">Contacto</a></li>
 			<li><span class="en">EN</span>
 				<input type="checkbox" class="check2" checked = "true">
-				<span class="es">ES</span></li>
+				<span class="es">ES</span></li></ul>
 		</div>
 	</header>
 	<main>
@@ -88,11 +88,11 @@
 							<li>Diseño Mecánico</li>
 							<li>Idiomas
 								<ul>
-									<il>
+									<il><ul>
 										<li>Inglés B2 - (70%)</li>
 										<progress id="ingles" max="100" value="70"></progress><br>
 										<li>Francés A2 - (30%)</li>
-										<progress id="frances" max="100" value="30"></progress>
+										<progress id="frances" max="100" value="30"></progress></ul>
 									</il>
 								</ul>
 							</li>
@@ -104,7 +104,7 @@
 		<section class="item" id="certificaciones">
 			<h2>Certificaciones</h2>
 			<hr class="linea"/>
-			<section class="certificacion" id="coursera">
+			<section class="certificacion" id="coursera1">
 				<p class="tituloCertificacion">Python for Everydoby</p>
 				<p class="datosCertificacion">Institución: Coursera</p>
 				<p class="datosCertificacion">Expedición: Julio 2023</p>
@@ -155,7 +155,7 @@
 				</details>
 			</section>
 
-			<div class="certificacion" id="coursera">
+			<div class="certificacion" id="coursera2">
 				<p class="tituloCertificacion">HTML Programing</p>
 				<p class="datosCertificacion">Institución: Coursera</p>
 				<p class="datosCertificacion">Expedición: En curso</p>
@@ -222,7 +222,7 @@
 					<input type="text" name="Nombre" id="name" placeholder="Nombre">
 
 					<label for="phone">Teléfono</label>
-					<input type="phone" name="Telefono" id="phone" placeholder="Telefono">
+					<input type="number" name="Telefono" id="phone" placeholder="Telefono">
 
 					<label for="email">Correo</label>
 					<input type="email" name="Correo" id="email" placeholder="correo@correo.com">
@@ -237,7 +237,7 @@
 				</div>
 			</form>
 			<div class="redes">
-				<a href="https://www.linkedin.com/in/andres-j-baez-rincon-2560ab1b3/" target="_blank"><img alt="linkedin" class="logosRedes"src="../images/linkedinLogo.png"></a>
+				<a href="https://www.linkedin.com/in/andres-j-baez-rincon-2560ab1b3/" target="_blank"><img alt="linkedin" class="logosRedes" src="../images/linkedinLogo.png"></a>
 				<a href="https://facebook.com/andresbaez0710/" target="_blank"><img src="../images/facebookLogo.png" alt="facebook" class="logosRedes"></a>
 				<a href="https://www.instagram.com/abaez_/" target="_blank"><img src="../images/instagramLogo.png" alt="instagram" class="logosRedes"></a>
 				<a href="https://github.com/andresbaezrincon" target="_blank"><img src="../images/githubLogo.png" alt="github" class="logosRedes"></a>
@@ -253,7 +253,7 @@
 			Página Web Diseñada por: Andrés Báez.
 		</p>
 		<p>
-			Derechos Reservados&copy
+			Derechos Reservados&copy;
 		</p>
 	</footer>
 	<script type="text/JavaScript" src="../js/script.js"></script>
