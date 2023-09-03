@@ -335,13 +335,16 @@ h3{
     height: 200px;
     /*position: relative;*/
 }
+#html5{
+    width: 370px;
+}
 #coursera1, #coursera2{
     background-color: #4868c0
 }
 #python5{
     height:220px;
 }
-#coursera:hover{
+#coursera1:hover, #coursera2:hover{
     background-color: #273a6c;
     .subCertificacion{
         background-color: #828c91;
