@@ -363,10 +363,10 @@ h3{
     transition-property: padding,color;
     transition-duration: .5s;
 }
-#solidWorksCSWA{
+#solidWorksCSWA,#solidWorksCSWP{
     background-color: #a30404;
 }
-#solidWorksCSWA:hover{
+#solidWorksCSWA:hover,#solidWorksCSWP:hover{
     background-color: #5e0000;
     color: #ffffff;
     transition-property: background-color,color;
